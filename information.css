@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "YanoneKaffeesatz-Regular"; 
+    src: url("YanoneKaffeesatz-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "YanoneKaffeesatz-Regular";
+}
+nav {
+    height: 9%;
+    width: 100%;
+    position:fixed;
+    z-index:5;
+  }
+.img-container {
+    background-image: url('info.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.head {
+    width: 100%;
+}
+.menu-items {
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    font-size: 30px;
+    padding: 10px 10px;
+}
+
+.menu div {
+    padding: 10px 10px;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    color: #bebebe;
+}
+.burger-icon {
+    display: none;
+    background-image: url("burger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+    transition: 0.7s;
+}
+@media (max-width: 768px) {
+    .menu-items {
+        display: none; 
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: rgba(20, 20, 20, 0.7);
+        align-items: center;
+        font-size: 25px;
+    }
+    .menu div {
+        padding: 0;    
+    }
+    .menu.active .menu-items {
+        display: flex;
+    }
+    .burger-icon {
+        display: flex;
+        cursor: pointer;
+        position: fixed;
+        z-index: 4;
+    }
+    .menu.active .burger-icon {
+        display: flex;
+        cursor: pointer;
+        position: fixed;
+        background-image: url(close.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 5;
+        height: 25px;
+        transition: 0.7s;
+    }
+    #sp {
+        font-size: 142px;
+    }
+    #t {
+        font-size: 42px;
+    }
+    #plus {
+        margin-top: -188px;
+        margin-right: 25px;
+    }
+    iframe {
+        height: 200px;
+    }
+    #text {
+        font-size: 15px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    #post {
+        font-size: 14px;
+    }
+    #adress {
+        font-size: 14px;
+    }
+    nav {
+        height: 7%;
+    }
+    .info {
+        font-size: 12px;
+    }
+}
+.logo {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+}
+.SPORT {
+    font-size: 150px;
+    color: rgba(219, 49, 56, 1);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.SPORT p {
+    margin-top: 30%;
+}
+.sp {
+    margin-top: 30%;
+}
+.plus {
+    margin-top: -200px;
+    width: 300px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+}
+.plus p {
+    margin: 0;
+    text-align: right;
+}
+main {
+    z-index: 3;
+    background-color: rgba(20, 20, 20, 1);
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 42%;
+    width: 100%;
+}
+span {
+    color: rgba(219, 49, 56, 1);
+}
+.text {
+    font-size: 24px;
+    margin: 3% 6% 2% 6%;
+    text-align: left;
+}
+iframe {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    width: 70%
+}
+.div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+.onas {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.block {
+    margin: 0 6% 0 6%;
+    width: 30%;
+    font-size: 14px;
+}
+img {
+    height: 100%;
+}
+footer {
+    z-index: 3;
+    background-color: rgb(33, 33, 33);
+    text-align: left;
+    color: #676767;
+    position: absolute;
+    width: 100%;
+}
+footer p {
+    margin-left: 20px;
+}

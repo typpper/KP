@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "YanoneKaffeesatz-Regular";
+  src: url("YanoneKaffeesatz-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  height: 100vh;
+  background-image: url("03.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: "YanoneKaffeesatz-Regular";
+}
+body:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(20, 20, 20, 0.8);
+  z-index: 2;
+}
+
+.menu-items {
+  position: fixed;
+  color: #fff;
+  text-align: center;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  font-size: 30px;
+  padding: 10px 10px;
+}
+.menu-items div {
+  padding: 10px 10px;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+a:hover {
+  color: #bebebe;
+}
+.burger-icon {
+  display: none;
+    background-image: url("burger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+    transition: 0.7s;
+}
+
+@media (max-width: 768px) {
+  .menu-items {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.7);
+    align-items: center;
+    font-size: 25px;
+}
+.menu div {
+    padding: 0;    
+}
+.menu.active .menu-items {
+    display: flex;
+}
+.burger-icon {
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    z-index: 4;
+}
+.menu.active .burger-icon {
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    background-image: url(close.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    height: 25px;
+    transition: 0.7s;
+}
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+.logo .SPORT {
+  margin-top: 150px;
+  font-size: 150px;
+  color: rgb(219, 49, 56);
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.logo .plus {
+  margin-top: -50px;
+  width: 300px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  z-index: 3;
+}
+
+p {
+  margin: 0;
+  text-align: right;
+}
+
+.subtext {
+  margin-top: 270px;
+  display: flex;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+  z-index: 3;
+}
+.subtext p {
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

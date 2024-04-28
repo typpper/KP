@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tuning.css">
+    <link rel="shortcut icon" href="logo.svg"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="page.js"></script>
+    <title>Тюнинг</title>
+</head>
+<body>
+    <header>
+        <nav id="Nav">
+            <div class="menu">
+                <div class="burger-icon" onclick="toggleMenu()">
+            </div>
+            <div class="menu-items">
+                <div><a href="main.html">Главная</a></div>
+                <div><a href="techcenter.html">Техцентр</a></div>
+                <div><a href="deteiling.html">Детейлинг</a></div>
+                <div><a href="tuning.html">Тюнинг</a></div>
+                <div><a href="information.html">О нас</a></div>
+            </div>
+            </div> 
+        </nav>
+        <div class="img-container"></div>
+        <div class="logo">
+            <div class="SPORT">
+                <p id="sp">SPORT</p>
+            </div>
+            <div class="plus" id="plus">
+                <p id="t">plus</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p class="zagolovok" id="zagolovok">ТЮНИНГ <span>SPORT</span> PLUS</p>
+        <div id="text-container">
+        <p class="text">Тюнинг для нас не просто модное слово, а совокупность характеристик, которые определяют восприятие вашего автомобиля:</p>
+        <ul class="text">
+            <li>Производительность;</li>
+            <li>Эффективность;</li>
+            <li>Способность выполнять поставленные задачи.</li>
+        </ul>
+        <img src="dot.png" class="dots">
+        <div class="img">
+            <img src="tune1.png">
+        </div>
+        <p class="text">Для увеличения производительности и эффективности вашего автомобиля предлагаем Вам комплекс услуг по доработке и дооснащению:</p>
+        <ul class="text">
+            <li>Настроим ECU и TCU.</br>Мощностной тюнинг в нашем исполнении позволяет увеличить мощность и крутящий момент без потери надежности. Чип-тюнинг - хороший вариант для тех, кто хочет увеличить эффективность и производительность своего автомобиля не прибегая к тюнингу технической части;</li>
+            <li>Изготовим выхлопную систему конкретно для вашего автомобиля, сделаем стильно и надежно! Либо поможем с выбором и качественно установим выхлопную систему от лучшего и проверенного производителя;</li>
+            <li>Доработаем систему охлаждения, чтобы Ваш автомобиль мог выполнять поставленные задачи в любых условиях. У нас есть ряд готовых продуктов с уникальными характеристиками для широкого ряда автомобильных моделей;</li>
+            <li>Модернизация тормозной системы и подвески автомобиля - лучшее решение для того, чтобы повысить свою безопасность на дороге и чувствовать себя еще более уверено.</li>
+        </ul>
+        <p class="text">Независимо от сложности и объема работ, мы можем решить практически любую задачу и привести производительность вашего автомобиля к такому уровню, который нужен именно Вам.</p>
+        </div>
+        <form>
+            <p class="form" id="form">ОТВЕТИМ НА ЛЮБОЙ ВОПРОС</p>
+            <img class="dots" src="dot.png">
+            <div class="contact">
+                <input type="text" id="input" placeholder="ИМЯ">
+                <input type="text" id="input" placeholder="ТЕЛЕФОН">
+            </div>
+            <div>
+                <textarea placeholder="ВОПРОС" id="textarea" rows="7"></textarea>
+            </div>
+            <div class="submit" id="submit">
+                <button type="submit" id="button">ОТПРАВИТЬ</button>
+            </div>
+        </form>
+        <footer></footer>
+    </main>
+</body>
+</html>

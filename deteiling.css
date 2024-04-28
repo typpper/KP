@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "YanoneKaffeesatz-Regular"; 
+    src: url("YanoneKaffeesatz-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "YanoneKaffeesatz-Regular";
+}
+nav {
+    height: 9%;
+    width: 100%;
+    position:fixed;
+    z-index:5;
+  }
+.img-container {
+    background-image: url('det.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.head {
+    width: 100%;
+}
+.menu-items {
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    font-size: 30px;
+    padding: 10px 10px;
+}
+.menu div {
+    padding: 10px 10px;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    color: #bebebe;
+}
+.burger-icon {
+    display: none;
+    background-image: url("burger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+    transition: 0.7s;
+}
+@media (max-width: 768px) {
+    .menu-items {
+        display: none; 
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: rgba(20, 20, 20, 0.7);
+        align-items: center;
+        font-size: 25px;
+    }
+    .menu div {
+        padding: 0;    
+    }
+    .menu.active .menu-items {
+        display: flex;
+    }
+    .burger-icon {
+        display: flex;
+        cursor: pointer;
+        position: fixed;
+        z-index: 4;
+    }
+    .menu.active .burger-icon {
+        display: flex;
+        cursor: pointer;
+        position: fixed;
+        background-image: url(close.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 5;
+        height: 25px;
+        transition: 0.7s;
+    }
+    input::placeholder {
+        font-size: 10px;
+    }
+    textarea::placeholder {
+        font-size: 10px;
+    }
+    #text-container p {
+        font-size: 15px;
+    }
+    #zagolovok {
+        font-size: 32px;
+    }
+    #form {
+        font-size: 32px;
+    }
+    #sp {
+        font-size: 142px;
+    }
+    #t {
+        font-size: 42px;
+    }
+    #plus {
+        margin-top: -188px;
+        margin-right: 25px;
+    }
+    #form {
+        font-size: 29px;
+    }
+    #input {
+        height: 20px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    #textarea {
+        margin-top: 3px;
+    }
+    #button {
+        font-size: 10px;
+    }
+    #submit {
+        margin-top: 0px;
+    }
+    footer p {
+        font-size: 10px;
+    } 
+    nav {
+        height: 7%;
+    }
+}
+.logo {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+}
+.SPORT {
+    font-size: 150px;
+    color: rgba(219, 49, 56, 1);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.SPORT p {
+    margin-top: 30%;
+}
+.plus {
+    margin-top: -200px;
+    width: 300px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+}
+.plus p {
+    margin: 0;
+    text-align: right;
+}
+main {
+    z-index: 3;
+    background-color: rgba(20, 20, 20, 1);
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 42%;
+    width: 100%;
+}
+span {
+    color: rgba(219, 49, 56, 1);
+}
+.zagolovok {
+    font-size: 40px;
+    margin: 4%;
+}
+.text {
+    font-size: 24px;
+    margin: 3% 6% 2% 6%;
+    text-align: left;
+}
+.img {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.img img {
+    width: 83%;
+}
+.dots {
+    width: 10%;
+}
+.form {
+    margin-top: 9%;
+    margin-bottom: 2%;
+    font-size: 37px;
+    text-align: center;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    background-color: rgba(20, 20, 20, 1);
+    width: 35%;
+    margin: 17px 0 0 0;
+    border: 1px solid rgba(137, 137, 137, 1);
+    outline: none;
+    color: #ffffff;
+    height: 30px;
+}
+input:focus {
+    border-color:  rgba(219, 49, 56, 1);
+}
+input::placeholder {
+    font-family: "YanoneKaffeesatz-Regular";
+}
+textarea {
+    width: 35%;
+    margin-top: 17px;
+    height: 40%;
+    resize: none;
+    outline: none;
+    background-color: rgba(20, 20, 20, 1);
+    color: #ffffff;
+    display: in;
+}
+textarea:focus {
+    border-color:  rgba(219, 49, 56, 1);
+}
+textarea::placeholder {
+    font-family: "YanoneKaffeesatz-Regular";
+    transform: translateY(8px)
+}
+button {
+    font-family: "YanoneKaffeesatz-Regular";
+    border: none;
+    height: 40%;
+    background-color: rgba(20, 20, 20, 1);
+    border: none;
+    color: #ffffff;
+    font-size: 23px;
+
+}
+.submit {
+    width: 33%;
+    display: inline-block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+button:hover {
+    color: rgba(219, 49, 56, 1);
+}
+footer {
+    z-index: 3;
+    background-color: rgb(33, 33, 33);
+    text-align: left;
+    color: #676767;
+    position: absolute;
+    width: 100%;
+}
+footer p {
+    margin-left: 20px;
+}
