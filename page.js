@@ -95,3 +95,15 @@ $.ajax({
     }
 }); 
 }
+
+function validateForm() {
+    var name = document.getElementById('input').value.trim();
+    var phone = document.getElementById('phone').value.trim();
+    var question = document.getElementById('textarea').value.trim();
+
+    if (name === '' || phone === '' || question === '') {
+        alert('Пожалуйста, заполните все поля формы.');
+        return false;
+    }
+    return true;
+}
